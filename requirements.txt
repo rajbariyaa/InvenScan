@@ -1,4 +1,7 @@
 mistralai
 google-generativeai
 pandas
-sqlite3
+python-dotenv
+pillow
+requests
+psycopg2-binary

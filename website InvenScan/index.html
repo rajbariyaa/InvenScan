@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invensnap — Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="site-header">
+      <div class="logo">Invensnap</div>
+      <nav class="nav">
+        <a href="#product">Product</a>
+        <a href="#unique">Why Us</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+      <button class="cta cta-ghost" data-scroll="#roadmap">See the vision</button>
+      <button class="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Coming soon</p>
+          <h1>AI invoice scanning, built for Clover inventory.</h1>
+          <p class="subhead">
+            Invensnap automates inventory management for restaurants and retail stores by using
+            AI-powered invoice scanning to eliminate manual data entry, reduce discrepancies, and
+            prevent stockouts.
+          </p>
+          <div class="hero-actions">
+            <button class="cta" data-scroll="#product">What it will do</button>
+            <button class="cta cta-outline" data-scroll="#roadmap">Future goals</button>
+          </div>
+          <div class="trust-row">
+            <div class="trust-pill">Built natively for Clover POS</div>
+            <div class="trust-pill">Zero manual entry</div>
+            <div class="trust-pill">Inventory updates in seconds</div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="pulse"></span>
+            Product preview
+          </div>
+          <div class="hero-card-body">
+            <div class="metric">
+              <span>Invoice captured</span>
+              <strong>AI parses line items</strong>
+            </div>
+            <div class="metric">
+              <span>Validation</span>
+              <strong>Exceptions only</strong>
+            </div>
+            <div class="metric">
+              <span>Sync</span>
+              <strong>Updates Clover stock</strong>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" id="accuracy-bar"></div>
+            </div>
+            <div class="mini-log" id="activity-log"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="product" class="solution">
+        <div class="section-header">
+          <h2>What the product will do</h2>
+          <p>
+            The goal is to remove manual data entry, clean up inventory inaccuracies, and give
+            operators instant confidence in their Clover inventory.
+          </p>
+        </div>
+        <div class="solution-grid">
+          <article>
+            <h3>Invoice scanning</h3>
+            <p>Upload a PDF or photo and let AI extract every line item automatically.</p>
+          </article>
+          <article>
+            <h3>Mismatch detection</h3>
+            <p>Flag quantity or price variances so teams only review exceptions.</p>
+          </article>
+          <article>
+            <h3>Clover sync</h3>
+            <p>Push clean inventory updates straight into Clover without reconfiguring SKUs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="unique" class="how">
+        <div class="section-header">
+          <h2>Why Invensnap is unique</h2>
+          <p>
+            We are creating the first automated invoice scanning solution built natively for Clover
+            POS. No extra IT setup, no complicated integrations.
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="step">
+            <div class="step-number">01</div>
+            <h3>Native by design</h3>
+            <p>Designed specifically for Clover merchants, not retrofitted for them.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <h3>Out-of-the-box automation</h3>
+            <p>Operators will be able to start in minutes without IT support.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <h3>Future-proof data</h3>
+            <p>Built to surface vendor analytics and predictive ordering as we scale.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="growth">
+        <div class="section-header">
+          <h2>Growth roadmap</h2>
+          <p>Our plan to scale from Clover to every major POS ecosystem.</p>
+        </div>
+        <div class="phases">
+          <div class="phase-card">
+            <h3>Phase 1 (Year 1-2)</h3>
+            <p>Dominate Clover by becoming the go-to invoice automation app for 700,000+ merchants.</p>
+          </div>
+          <div class="phase-card">
+            <h3>Phase 2 (Year 2-3)</h3>
+            <p>Add premium analytics, price tracking, and predictive ordering to lift ARPU.</p>
+          </div>
+          <div class="phase-card">
+            <h3>Phase 3 (Year 3-5)</h3>
+            <p>Expand to Square, Toast, Shopify, and more to multiply addressable market size.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>Invensnap</h3>
+        <p>AI-powered invoice scanning for the Clover ecosystem.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#product">Product</a>
+        <a href="#unique">Why Us</a>
+        <a href="#roadmap">Roadmap</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
