@@ -1,349 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Invensnap — Automated Inventory for Clover POS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="bg-orb orb-a"></div>
-  <div class="bg-orb orb-b"></div>
-  <div class="grid-overlay"></div>
-
-  <header class="site-header" id="top">
-    <div class="container header-row">
-      <a class="logo" href="#top" aria-label="Invensnap">
-        <span class="logo-mark">IS</span>
-        <span class="logo-text">Invensnap</span>
-      </a>
-      <nav class="nav" id="nav">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invensnap — Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="site-header">
+      <div class="logo">Invensnap</div>
+      <nav class="nav">
         <a href="#product">Product</a>
-        <a href="#why">Why</a>
-        <a href="#growth">Growth</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
+        <a href="#unique">Why Us</a>
+        <a href="#roadmap">Roadmap</a>
       </nav>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+      <button class="cta cta-ghost" data-scroll="#roadmap">See the vision</button>
+      <button class="hamburger" aria-label="Open menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <a class="btn primary" href="#contact">Get Early Access</a>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Built native for Clover POS</p>
-          <h1>
-            Inventory updates that go from
-            <span class="highlight" id="rotatingWord">hours</span>
-            to seconds.
-          </h1>
-          <p class="lead">
-            Invensnap automates invoice capture for restaurants and retail stores, eliminating manual data entry, cutting stockouts, and syncing inventory directly into Clover.
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Coming soon</p>
+          <h1>AI invoice scanning, built for Clover inventory.</h1>
+          <p class="subhead">
+            Invensnap automates inventory management for restaurants and retail stores by using
+            AI-powered invoice scanning to eliminate manual data entry, reduce discrepancies, and
+            prevent stockouts.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#contact">Request a Demo</a>
-            <a class="btn ghost" href="#product">See How It Works</a>
+            <button class="cta" data-scroll="#product">What it will do</button>
+            <button class="cta cta-outline" data-scroll="#roadmap">Future goals</button>
           </div>
-          <div class="hero-metrics">
-            <div class="metric">
-              <span class="metric-value" data-counter="700000">0</span>
-              <span class="metric-label">Clover merchants</span>
-            </div>
-            <div class="metric">
-              <span class="metric-value" data-counter="93">0</span>
-              <span class="metric-label">% less manual entry</span>
-            </div>
-            <div class="metric">
-              <span class="metric-value" data-counter="45">0</span>
-              <span class="metric-label">sec setup</span>
-            </div>
+          <div class="trust-row">
+            <div class="trust-pill">Built natively for Clover POS</div>
+            <div class="trust-pill">Zero manual entry</div>
+            <div class="trust-pill">Inventory updates in seconds</div>
           </div>
         </div>
-        <div class="hero-card" aria-label="Product preview">
-          <div class="card-header">
-            <div>
-              <h3>Invoice to Inventory</h3>
-              <p>AI extracts items, units, and costs.</p>
-            </div>
-            <span class="status">Live Sync</span>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="pulse"></span>
+            Product preview
           </div>
-          <div class="card-body">
-            <div class="line-item">
-              <span>Roma Tomatoes</span>
-              <span>12 cs</span>
-              <span>$168.00</span>
+          <div class="hero-card-body">
+            <div class="metric">
+              <span>Invoice captured</span>
+              <strong>AI parses line items</strong>
             </div>
-            <div class="line-item">
-              <span>Olive Oil 1L</span>
-              <span>6 ea</span>
-              <span>$84.00</span>
+            <div class="metric">
+              <span>Validation</span>
+              <strong>Exceptions only</strong>
             </div>
-            <div class="line-item">
-              <span>Ground Coffee</span>
-              <span>24 lb</span>
-              <span>$144.00</span>
+            <div class="metric">
+              <span>Sync</span>
+              <strong>Updates Clover stock</strong>
             </div>
-            <div class="sync">
-              <div class="pulse"></div>
-              <div>
-                <p class="sync-title">Clover Inventory Updated</p>
-                <p class="sync-sub">3 categories · 42 items</p>
-              </div>
+            <div class="progress">
+              <div class="progress-bar" id="accuracy-bar"></div>
             </div>
-          </div>
-          <div class="card-footer">
-            <span>Accuracy check: 99.4%</span>
-            <span>Last scan: 2 min ago</span>
+            <div class="mini-log" id="activity-log"></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="logos">
-      <div class="container logos-row">
-        <span>Built for independent retailers</span>
-        <div class="logo-pill">Clover App Market</div>
-        <div class="logo-pill">Restaurants</div>
-        <div class="logo-pill">Convenience</div>
-        <div class="logo-pill">Specialty Retail</div>
-      </div>
-    </section>
-
-    <section class="product" id="product">
-      <div class="container">
+      <section id="product" class="solution">
         <div class="section-header">
-          <h2>From invoice to real-time stock in three steps</h2>
-          <p>Designed to work out of the box with Clover. No IT team required.</p>
+          <h2>What the product will do</h2>
+          <p>
+            The goal is to remove manual data entry, clean up inventory inaccuracies, and give
+            operators instant confidence in their Clover inventory.
+          </p>
         </div>
-        <div class="steps">
-          <article class="step-card reveal">
-            <span class="step-number">01</span>
-            <h3>Scan invoices</h3>
-            <p>Snap a photo or upload a PDF. AI extracts vendor, item, and cost details.</p>
+        <div class="solution-grid">
+          <article>
+            <h3>Invoice scanning</h3>
+            <p>Upload a PDF or photo and let AI extract every line item automatically.</p>
           </article>
-          <article class="step-card reveal">
-            <span class="step-number">02</span>
-            <h3>Auto-match items</h3>
-            <p>Smart mapping aligns vendor SKUs with your Clover catalog automatically.</p>
+          <article>
+            <h3>Mismatch detection</h3>
+            <p>Flag quantity or price variances so teams only review exceptions.</p>
           </article>
-          <article class="step-card reveal">
-            <span class="step-number">03</span>
-            <h3>Sync in seconds</h3>
-            <p>Inventory levels update instantly to prevent stockouts and over-ordering.</p>
+          <article>
+            <h3>Clover sync</h3>
+            <p>Push clean inventory updates straight into Clover without reconfiguring SKUs.</p>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="why" id="why">
-      <div class="container">
-        <div class="split">
-          <div>
-            <h2>Why Invensnap stands out</h2>
-            <p class="lead">The first automated invoice scanning solution built native for Clover POS.</p>
-            <ul class="bullet-list">
-              <li>Zero manual entry and no complex setup.</li>
-              <li>Built to support 700,000+ Clover merchants out of the box.</li>
-              <li>Reduces inventory discrepancies caused by human error.</li>
-              <li>Immediate ROI with hours of labor reclaimed each week.</li>
-            </ul>
-          </div>
-          <div class="why-panels">
-            <div class="panel reveal">
-              <h4>Out-of-the-box AI</h4>
-              <p>Works without IT support or custom templates.</p>
-            </div>
-            <div class="panel reveal">
-              <h4>Marketplace-first growth</h4>
-              <p>Distributed through the Clover App Marketplace.</p>
-            </div>
-            <div class="panel reveal">
-              <h4>Clean integrations</h4>
-              <p>Secure, direct integration into Clover inventory APIs.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="growth" id="growth">
-      <div class="container">
+      <section id="unique" class="how">
         <div class="section-header">
-          <h2>Three phases to scale revenue</h2>
-          <p>Focused growth from Clover dominance to multi-POS expansion.</p>
+          <h2>Why Invensnap is unique</h2>
+          <p>
+            We are creating the first automated invoice scanning solution built natively for Clover
+            POS. No extra IT setup, no complicated integrations.
+          </p>
         </div>
-        <div class="phase-grid">
-          <div class="phase-card reveal">
-            <span class="phase-label">Phase 1</span>
-            <h3>Years 1-2</h3>
-            <p>Become the go-to invoice automation app inside Clover and capture the marketplace demand.</p>
+        <div class="timeline">
+          <div class="step">
+            <div class="step-number">01</div>
+            <h3>Native by design</h3>
+            <p>Designed specifically for Clover merchants, not retrofitted for them.</p>
           </div>
-          <div class="phase-card reveal">
-            <span class="phase-label">Phase 2</span>
-            <h3>Years 2-3</h3>
-            <p>Increase ARPU with premium analytics, price tracking, and predictive ordering.</p>
+          <div class="step">
+            <div class="step-number">02</div>
+            <h3>Out-of-the-box automation</h3>
+            <p>Operators will be able to start in minutes without IT support.</p>
           </div>
-          <div class="phase-card reveal">
-            <span class="phase-label">Phase 3</span>
-            <h3>Years 3-5</h3>
-            <p>Expand to Square, Toast, Shopify, and more to multiply the addressable market.</p>
+          <div class="step">
+            <div class="step-number">03</div>
+            <h3>Future-proof data</h3>
+            <p>Built to surface vendor analytics and predictive ordering as we scale.</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="pricing" id="pricing">
-      <div class="container">
+      <section id="roadmap" class="growth">
         <div class="section-header">
-          <h2>Simple subscription pricing</h2>
-          <p>Launch with clear tiers and upgrade as you scale.</p>
+          <h2>Growth roadmap</h2>
+          <p>Our plan to scale from Clover to every major POS ecosystem.</p>
         </div>
-        <div class="pricing-grid">
-          <div class="price-card reveal">
-            <h3>Starter</h3>
-            <p class="price">$89<span>/mo</span></p>
-            <ul class="bullet-list">
-              <li>Up to 200 invoices</li>
-              <li>Core Clover sync</li>
-              <li>Email support</li>
-            </ul>
-            <button class="btn ghost">Start Trial</button>
+        <div class="phases">
+          <div class="phase-card">
+            <h3>Phase 1 (Year 1-2)</h3>
+            <p>Dominate Clover by becoming the go-to invoice automation app for 700,000+ merchants.</p>
           </div>
-          <div class="price-card featured reveal">
-            <h3>Growth</h3>
-            <p class="price">$199<span>/mo</span></p>
-            <ul class="bullet-list">
-              <li>Unlimited invoices</li>
-              <li>Advanced matching</li>
-              <li>Priority support</li>
-            </ul>
-            <button class="btn primary">Most Popular</button>
+          <div class="phase-card">
+            <h3>Phase 2 (Year 2-3)</h3>
+            <p>Add premium analytics, price tracking, and predictive ordering to lift ARPU.</p>
           </div>
-          <div class="price-card reveal">
-            <h3>Enterprise</h3>
-            <p class="price">Custom</p>
-            <ul class="bullet-list">
-              <li>Multi-location</li>
-              <li>Dedicated CSM</li>
-              <li>Custom reporting</li>
-            </ul>
-            <button class="btn ghost">Talk to Sales</button>
+          <div class="phase-card">
+            <h3>Phase 3 (Year 3-5)</h3>
+            <p>Expand to Square, Toast, Shopify, and more to multiply addressable market size.</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="faq">
-      <div class="container">
-        <div class="section-header">
-          <h2>Frequently asked questions</h2>
-          <p>Quick answers for Clover merchants exploring Invensnap.</p>
-        </div>
-        <div class="faq-list">
-          <button class="faq-item" type="button">
-            <span>Does it work with my existing Clover catalog?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-panel">
-            <p>Yes. Invensnap matches invoice line items to your current Clover inventory and flags any items that need review.</p>
-          </div>
-
-          <button class="faq-item" type="button">
-            <span>How long does onboarding take?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-panel">
-            <p>Most teams are fully synced in under 45 seconds with no complex integrations.</p>
-          </div>
-
-          <button class="faq-item" type="button">
-            <span>Is there a free trial?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-panel">
-            <p>Yes. We offer a 14-day trial so you can see the time savings immediately.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-copy">
-          <h2>See how fast inventory can be</h2>
-          <p class="lead">Tell us about your store and get early access to Invensnap.</p>
-          <div class="contact-points">
-            <div>
-              <h4>Fast setup</h4>
-              <p>Connect Clover in minutes.</p>
-            </div>
-            <div>
-              <h4>Real outcomes</h4>
-              <p>Reduce stockouts and waste.</p>
-            </div>
-          </div>
-        </div>
-        <form class="contact-form" id="contactForm">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Alex Rivera" required />
-          </label>
-          <label>
-            Business Email
-            <input type="email" name="email" placeholder="alex@store.com" required />
-          </label>
-          <label>
-            Clover Merchant ID
-            <input type="text" name="merchant" placeholder="Optional" />
-          </label>
-          <label>
-            Monthly invoice volume
-            <select name="volume" required>
-              <option value="">Select volume</option>
-              <option>0-100</option>
-              <option>101-300</option>
-              <option>301-600</option>
-              <option>600+</option>
-            </select>
-          </label>
-          <button class="btn primary" type="submit">Request Early Access</button>
-          <p class="form-note" id="formNote" role="status"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-row">
+    <footer class="site-footer">
       <div>
-        <div class="logo footer-logo">
-          <span class="logo-mark">IS</span>
-          <span class="logo-text">Invensnap</span>
-        </div>
-        <p>AI-powered inventory automation built for Clover POS.</p>
+        <h3>Invensnap</h3>
+        <p>AI-powered invoice scanning for the Clover ecosystem.</p>
       </div>
       <div class="footer-links">
         <a href="#product">Product</a>
-        <a href="#growth">Growth</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
+        <a href="#unique">Why Us</a>
+        <a href="#roadmap">Roadmap</a>
       </div>
-      <div class="footer-cta">
-        <p>Launch with us in 2026.</p>
-        <a class="btn ghost" href="#contact">Book a demo</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
