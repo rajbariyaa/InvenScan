@@ -1,6 +1,6 @@
 # InvenScan
 
-This project uses **Mistral OCR** and **Gemini Flash** to extract itemized data from vendor receipts and store it in a SQLite database. It's designed for applications like automating product entry for POS systems.
+This project uses **Mistral OCR** and **Gemini Flash** to extract itemized data from vendor receipts and store it in a PostgreSQL database. It's designed for applications like automating product entry for POS systems.
 
 ## Features
 
